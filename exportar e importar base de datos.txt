@@ -1,0 +1,19 @@
+--EXPORTAR BASE DE DATOS de MySQL
+*Barra de tareas buscamos mysql (mysql client line) clic derecho ir a la ruta
+*si es acceso directo, clic derecho ir a la ruta del archivo
+* copiar la ruta de donde estamos
+*abrir cmd como administrador
+*escribimos cd pegamos la ruta y enter
+*dentro de la ruta escribimos mysqldump -u root -p --databases nombredb > la ruta donde queremos que se guarde el backup \nombredebk.sql
+*enter y si esta bien nos pedira ingresar la clave de mysql y enter. 
+*listo
+
+---------------------------------------
+si no se observa el archivo - en el explorador de archivos en la barra de menu
+VISTA/ OPCIONES - en la ventana que se abre en VER/ desmarcamos la opcion 
+"Ocultar las extenciones de archivo para tipos de archivo". 
+-----------------------------------------
+--IMPORTAR BASE DE DATOS
+*abrimos mysql client line, ponemos la clave
+* use nombredb
+*source y pegamos la ruta donde esta el backup
